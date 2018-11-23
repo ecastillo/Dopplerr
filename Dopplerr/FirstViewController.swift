@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSonarr
 
 class FirstViewController: UIViewController {
 
