@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074623EB21B5F5C9001EDACB /* SeriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */; };
+		074623EE21B61C1A001EDACB /* SeriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074623ED21B61C1A001EDACB /* SeriesCollectionViewCell.xib */; };
+		074623F221B62A58001EDACB /* ToggleButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074623F121B62A58001EDACB /* ToggleButton.xib */; };
+		074623F421B62AE1001EDACB /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074623F321B62AE1001EDACB /* ToggleButton.swift */; };
 		07E461E221A7C0B500EB87F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461E121A7C0B500EB87F5 /* AppDelegate.swift */; };
-		07E461E421A7C0B500EB87F5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461E321A7C0B500EB87F5 /* FirstViewController.swift */; };
-		07E461E621A7C0B500EB87F5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461E521A7C0B500EB87F5 /* SecondViewController.swift */; };
+		07E461E421A7C0B500EB87F5 /* WantedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461E321A7C0B500EB87F5 /* WantedViewController.swift */; };
+		07E461E621A7C0B500EB87F5 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461E521A7C0B500EB87F5 /* ActivityViewController.swift */; };
 		07E461E921A7C0B500EB87F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E461E721A7C0B500EB87F5 /* Main.storyboard */; };
 		07E461EB21A7C0B500EB87F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E461EA21A7C0B500EB87F5 /* Assets.xcassets */; };
 		07E461EE21A7C0B500EB87F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E461EC21A7C0B500EB87F5 /* LaunchScreen.storyboard */; };
@@ -72,10 +76,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		074623ED21B61C1A001EDACB /* SeriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesCollectionViewCell.xib; sourceTree = "<group>"; };
+		074623F121B62A58001EDACB /* ToggleButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToggleButton.xib; sourceTree = "<group>"; };
+		074623F321B62AE1001EDACB /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		07E461DE21A7C0B500EB87F5 /* Dopplerr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopplerr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E461E121A7C0B500EB87F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07E461E321A7C0B500EB87F5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		07E461E521A7C0B500EB87F5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		07E461E321A7C0B500EB87F5 /* WantedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedViewController.swift; sourceTree = "<group>"; };
+		07E461E521A7C0B500EB87F5 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		07E461E821A7C0B500EB87F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07E461EA21A7C0B500EB87F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07E461ED21A7C0B500EB87F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -140,9 +148,13 @@
 			isa = PBXGroup;
 			children = (
 				07E461E121A7C0B500EB87F5 /* AppDelegate.swift */,
-				07E461E321A7C0B500EB87F5 /* FirstViewController.swift */,
-				07E461E521A7C0B500EB87F5 /* SecondViewController.swift */,
+				07E461E321A7C0B500EB87F5 /* WantedViewController.swift */,
+				07E461E521A7C0B500EB87F5 /* ActivityViewController.swift */,
 				07E461E721A7C0B500EB87F5 /* Main.storyboard */,
+				074623F121B62A58001EDACB /* ToggleButton.xib */,
+				074623F321B62AE1001EDACB /* ToggleButton.swift */,
+				074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */,
+				074623ED21B61C1A001EDACB /* SeriesCollectionViewCell.xib */,
 				07E461EA21A7C0B500EB87F5 /* Assets.xcassets */,
 				07E461EC21A7C0B500EB87F5 /* LaunchScreen.storyboard */,
 				07E461EF21A7C0B500EB87F5 /* Info.plist */,
@@ -308,6 +320,8 @@
 			files = (
 				07E461EE21A7C0B500EB87F5 /* LaunchScreen.storyboard in Resources */,
 				07E461EB21A7C0B500EB87F5 /* Assets.xcassets in Resources */,
+				074623F221B62A58001EDACB /* ToggleButton.xib in Resources */,
+				074623EE21B61C1A001EDACB /* SeriesCollectionViewCell.xib in Resources */,
 				07E461E921A7C0B500EB87F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,9 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E461E621A7C0B500EB87F5 /* SecondViewController.swift in Sources */,
+				07E461E621A7C0B500EB87F5 /* ActivityViewController.swift in Sources */,
+				074623F421B62AE1001EDACB /* ToggleButton.swift in Sources */,
 				07E461E221A7C0B500EB87F5 /* AppDelegate.swift in Sources */,
-				07E461E421A7C0B500EB87F5 /* FirstViewController.swift in Sources */,
+				07E461E421A7C0B500EB87F5 /* WantedViewController.swift in Sources */,
+				074623EB21B5F5C9001EDACB /* SeriesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
