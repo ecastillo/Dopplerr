@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftSonarr
+import Kingfisher
 
 class WantedViewController: UIViewController {
     
