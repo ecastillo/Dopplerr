@@ -12,6 +12,7 @@ class SeriesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var airDateLabel: UILabel!
     
    // private var widthConstraint: NSLayoutConstraint?
     

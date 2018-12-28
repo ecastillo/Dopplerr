@@ -3,17 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0720FDBB21C34E35008CAD8A /* SeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720FDBA21C34E35008CAD8A /* SeriesViewController.swift */; };
+		0720FDBE21D04350008CAD8A /* SeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720FDBD21D04350008CAD8A /* SeriesTableViewCell.swift */; };
+		0723273221D2CF26006DD846 /* SystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723273121D2CF26006DD846 /* SystemViewController.swift */; };
+		0723273521D472E4006DD846 /* SSProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723273421D472E4006DD846 /* SSProgressView.swift */; };
+		0723273721D47667006DD846 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723273621D47667006DD846 /* Colors.swift */; };
+		0736825421D5E76700F4B116 /* Tabman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736825121D5E76700F4B116 /* Tabman.framework */; };
+		0736825521D5E76700F4B116 /* Pageboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736825321D5E76700F4B116 /* Pageboy.framework */; };
 		074623EB21B5F5C9001EDACB /* SeriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */; };
 		074623EE21B61C1A001EDACB /* SeriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074623ED21B61C1A001EDACB /* SeriesCollectionViewCell.xib */; };
 		074623F221B62A58001EDACB /* ToggleButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074623F121B62A58001EDACB /* ToggleButton.xib */; };
 		074623F421B62AE1001EDACB /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074623F321B62AE1001EDACB /* ToggleButton.swift */; };
+		07C0DF3321D598C9004C9C4F /* DiskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0DF3221D598C9004C9C4F /* DiskTableViewCell.swift */; };
 		07D86B0621BB10AE000876C2 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D86B0521BB10AE000876C2 /* Kingfisher.framework */; };
+		07D86B0D21BC761B000876C2 /* Date+Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D86B0C21BC761B000876C2 /* Date+Offset.swift */; };
+		07D86B0F21BCC966000876C2 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D86B0E21BCC966000876C2 /* ActivityTableViewCell.swift */; };
 		07E461E221A7C0B500EB87F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461E121A7C0B500EB87F5 /* AppDelegate.swift */; };
-		07E461E421A7C0B500EB87F5 /* WantedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461E321A7C0B500EB87F5 /* WantedViewController.swift */; };
+		07E461E421A7C0B500EB87F5 /* AllSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461E321A7C0B500EB87F5 /* AllSeriesViewController.swift */; };
 		07E461E621A7C0B500EB87F5 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461E521A7C0B500EB87F5 /* ActivityViewController.swift */; };
 		07E461E921A7C0B500EB87F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E461E721A7C0B500EB87F5 /* Main.storyboard */; };
 		07E461EB21A7C0B500EB87F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E461EA21A7C0B500EB87F5 /* Assets.xcassets */; };
@@ -77,14 +87,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0720FDBA21C34E35008CAD8A /* SeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesViewController.swift; sourceTree = "<group>"; };
+		0720FDBD21D04350008CAD8A /* SeriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesTableViewCell.swift; sourceTree = "<group>"; };
+		0723273121D2CF26006DD846 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
+		0723273421D472E4006DD846 /* SSProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSProgressView.swift; sourceTree = "<group>"; };
+		0723273621D47667006DD846 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0736825121D5E76700F4B116 /* Tabman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tabman.framework; path = Carthage/Build/iOS/Tabman.framework; sourceTree = "<group>"; };
+		0736825321D5E76700F4B116 /* Pageboy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pageboy.framework; path = Carthage/Build/iOS/Pageboy.framework; sourceTree = "<group>"; };
 		074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		074623ED21B61C1A001EDACB /* SeriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		074623F121B62A58001EDACB /* ToggleButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToggleButton.xib; sourceTree = "<group>"; };
 		074623F321B62AE1001EDACB /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		07C0DF3221D598C9004C9C4F /* DiskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskTableViewCell.swift; sourceTree = "<group>"; };
 		07D86B0521BB10AE000876C2 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		07D86B0C21BC761B000876C2 /* Date+Offset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Offset.swift"; sourceTree = "<group>"; };
+		07D86B0E21BCC966000876C2 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		07E461DE21A7C0B500EB87F5 /* Dopplerr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopplerr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E461E121A7C0B500EB87F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07E461E321A7C0B500EB87F5 /* WantedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedViewController.swift; sourceTree = "<group>"; };
+		07E461E321A7C0B500EB87F5 /* AllSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSeriesViewController.swift; sourceTree = "<group>"; };
 		07E461E521A7C0B500EB87F5 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		07E461E821A7C0B500EB87F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07E461EA21A7C0B500EB87F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +126,8 @@
 			files = (
 				07E4621A21A7C0F000EB87F5 /* SwiftSonarr.framework in Frameworks */,
 				07D86B0621BB10AE000876C2 /* Kingfisher.framework in Frameworks */,
+				0736825421D5E76700F4B116 /* Tabman.framework in Frameworks */,
+				0736825521D5E76700F4B116 /* Pageboy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,9 +148,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07C0DF3721D5B9FB004C9C4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0720FDBD21D04350008CAD8A /* SeriesTableViewCell.swift */,
+				07D86B0E21BCC966000876C2 /* ActivityTableViewCell.swift */,
+				07C0DF3221D598C9004C9C4F /* DiskTableViewCell.swift */,
+				0723273421D472E4006DD846 /* SSProgressView.swift */,
+				074623F321B62AE1001EDACB /* ToggleButton.swift */,
+				074623F121B62A58001EDACB /* ToggleButton.xib */,
+				074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */,
+				074623ED21B61C1A001EDACB /* SeriesCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07C0DF3821D5BA0C004C9C4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07C0DF3921D5BA14004C9C4F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07E461E321A7C0B500EB87F5 /* AllSeriesViewController.swift */,
+				0720FDBA21C34E35008CAD8A /* SeriesViewController.swift */,
+				07E461E521A7C0B500EB87F5 /* ActivityViewController.swift */,
+				0723273121D2CF26006DD846 /* SystemViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		07C0DF3A21D5BA8A004C9C4F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07D86B0C21BC761B000876C2 /* Date+Offset.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		07D86B0321BB10AE000876C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0736825321D5E76700F4B116 /* Pageboy.framework */,
+				0736825121D5E76700F4B116 /* Tabman.framework */,
 				07D86B0521BB10AE000876C2 /* Kingfisher.framework */,
 			);
 			name = Frameworks;
@@ -159,14 +224,13 @@
 		07E461E021A7C0B500EB87F5 /* Dopplerr */ = {
 			isa = PBXGroup;
 			children = (
+				07C0DF3821D5BA0C004C9C4F /* Models */,
+				07C0DF3921D5BA14004C9C4F /* Controllers */,
+				07C0DF3721D5B9FB004C9C4F /* Views */,
+				07C0DF3A21D5BA8A004C9C4F /* Extensions */,
+				0723273621D47667006DD846 /* Colors.swift */,
 				07E461E121A7C0B500EB87F5 /* AppDelegate.swift */,
-				07E461E321A7C0B500EB87F5 /* WantedViewController.swift */,
-				07E461E521A7C0B500EB87F5 /* ActivityViewController.swift */,
 				07E461E721A7C0B500EB87F5 /* Main.storyboard */,
-				074623F121B62A58001EDACB /* ToggleButton.xib */,
-				074623F321B62AE1001EDACB /* ToggleButton.swift */,
-				074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */,
-				074623ED21B61C1A001EDACB /* SeriesCollectionViewCell.xib */,
 				07E461EA21A7C0B500EB87F5 /* Assets.xcassets */,
 				07E461EC21A7C0B500EB87F5 /* LaunchScreen.storyboard */,
 				07E461EF21A7C0B500EB87F5 /* Info.plist */,
@@ -284,7 +348,7 @@
 				};
 			};
 			buildConfigurationList = 07E461D921A7C0B500EB87F5 /* Build configuration list for PBXProject "Dopplerr" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -383,10 +447,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E461E621A7C0B500EB87F5 /* ActivityViewController.swift in Sources */,
+				0723273721D47667006DD846 /* Colors.swift in Sources */,
+				0720FDBE21D04350008CAD8A /* SeriesTableViewCell.swift in Sources */,
 				074623F421B62AE1001EDACB /* ToggleButton.swift in Sources */,
 				07E461E221A7C0B500EB87F5 /* AppDelegate.swift in Sources */,
-				07E461E421A7C0B500EB87F5 /* WantedViewController.swift in Sources */,
+				07E461E421A7C0B500EB87F5 /* AllSeriesViewController.swift in Sources */,
+				07C0DF3321D598C9004C9C4F /* DiskTableViewCell.swift in Sources */,
+				07D86B0F21BCC966000876C2 /* ActivityTableViewCell.swift in Sources */,
+				07D86B0D21BC761B000876C2 /* Date+Offset.swift in Sources */,
+				0723273221D2CF26006DD846 /* SystemViewController.swift in Sources */,
+				0723273521D472E4006DD846 /* SSProgressView.swift in Sources */,
 				074623EB21B5F5C9001EDACB /* SeriesCollectionViewCell.swift in Sources */,
+				0720FDBB21C34E35008CAD8A /* SeriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
