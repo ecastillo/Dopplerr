@@ -64,8 +64,6 @@
 		07E461EE21A7C0B500EB87F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E461EC21A7C0B500EB87F5 /* LaunchScreen.storyboard */; };
 		07E461F921A7C0B600EB87F5 /* DopplerrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E461F821A7C0B600EB87F5 /* DopplerrTests.swift */; };
 		07E4620421A7C0B600EB87F5 /* DopplerrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4620321A7C0B600EB87F5 /* DopplerrUITests.swift */; };
-		07E4621A21A7C0F000EB87F5 /* SwiftSonarr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E4621721A7C0D900EB87F5 /* SwiftSonarr.framework */; };
-		07E4621B21A7C0F000EB87F5 /* SwiftSonarr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07E4621721A7C0D900EB87F5 /* SwiftSonarr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,27 +81,6 @@
 			remoteGlobalIDString = 07E461DD21A7C0B500EB87F5;
 			remoteInfo = Dopplerr;
 		};
-		07E4621621A7C0D900EB87F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 07E4621121A7C0D900EB87F5 /* SwiftSonarr.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 07AC2F6B2198A22300138D75;
-			remoteInfo = SwiftSonarr;
-		};
-		07E4621821A7C0D900EB87F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 07E4621121A7C0D900EB87F5 /* SwiftSonarr.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 07AC2F742198A22300138D75;
-			remoteInfo = SwiftSonarrTests;
-		};
-		07E4621C21A7C0F000EB87F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 07E4621121A7C0D900EB87F5 /* SwiftSonarr.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 07AC2F6A2198A22300138D75;
-			remoteInfo = SwiftSonarr;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -113,7 +90,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				07E4621B21A7C0F000EB87F5 /* SwiftSonarr.framework in Embed Frameworks */,
 				0736827621DAB4DC00F4B116 /* NotificationBanner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -185,7 +161,6 @@
 		07E461FF21A7C0B600EB87F5 /* DopplerrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DopplerrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E4620321A7C0B600EB87F5 /* DopplerrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopplerrUITests.swift; sourceTree = "<group>"; };
 		07E4620521A7C0B600EB87F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07E4621121A7C0D900EB87F5 /* SwiftSonarr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSonarr.xcodeproj; path = ../SwiftSonarr/SwiftSonarr.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0736825721D5EE1500F4B116 /* AutoInsetter.framework in Frameworks */,
-				07E4621A21A7C0F000EB87F5 /* SwiftSonarr.framework in Frameworks */,
 				07D86B0621BB10AE000876C2 /* Kingfisher.framework in Frameworks */,
 				0736825421D5E76700F4B116 /* Tabman.framework in Frameworks */,
 				0736825521D5E76700F4B116 /* Pageboy.framework in Frameworks */,
@@ -317,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				0736827521DAB4DC00F4B116 /* NotificationBanner.framework */,
-				07E4621121A7C0D900EB87F5 /* SwiftSonarr.xcodeproj */,
 				07E461E021A7C0B500EB87F5 /* Dopplerr */,
 				07E461F721A7C0B600EB87F5 /* DopplerrTests */,
 				07E4620221A7C0B600EB87F5 /* DopplerrUITests */,
@@ -373,15 +346,6 @@
 			path = DopplerrUITests;
 			sourceTree = "<group>";
 		};
-		07E4621221A7C0D900EB87F5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				07E4621721A7C0D900EB87F5 /* SwiftSonarr.framework */,
-				07E4621921A7C0D900EB87F5 /* SwiftSonarrTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,7 +362,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				07E4621D21A7C0F000EB87F5 /* PBXTargetDependency */,
 			);
 			name = Dopplerr;
 			productName = Dopplerr;
@@ -475,12 +438,6 @@
 			mainGroup = 07E461D521A7C0B500EB87F5;
 			productRefGroup = 07E461DF21A7C0B500EB87F5 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 07E4621221A7C0D900EB87F5 /* Products */;
-					ProjectRef = 07E4621121A7C0D900EB87F5 /* SwiftSonarr.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				07E461DD21A7C0B500EB87F5 /* Dopplerr */,
@@ -489,23 +446,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		07E4621721A7C0D900EB87F5 /* SwiftSonarr.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftSonarr.framework;
-			remoteRef = 07E4621621A7C0D900EB87F5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		07E4621921A7C0D900EB87F5 /* SwiftSonarrTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwiftSonarrTests.xctest;
-			remoteRef = 07E4621821A7C0D900EB87F5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		07E461DC21A7C0B500EB87F5 /* Resources */ = {
@@ -648,11 +588,6 @@
 			isa = PBXTargetDependency;
 			target = 07E461DD21A7C0B500EB87F5 /* Dopplerr */;
 			targetProxy = 07E4620021A7C0B600EB87F5 /* PBXContainerItemProxy */;
-		};
-		07E4621D21A7C0F000EB87F5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftSonarr;
-			targetProxy = 07E4621C21A7C0F000EB87F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
