@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0720FDBB21C34E35008CAD8A /* SeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720FDBA21C34E35008CAD8A /* SeriesViewController.swift */; };
 		0720FDBE21D04350008CAD8A /* SeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720FDBD21D04350008CAD8A /* SeriesTableViewCell.swift */; };
+		0721C4E221E99AF500BDB2B9 /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721C4E121E99AF500BDB2B9 /* NotificationBanner.framework */; };
 		0723273221D2CF26006DD846 /* SystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723273121D2CF26006DD846 /* SystemViewController.swift */; };
 		0723273521D472E4006DD846 /* SSProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723273421D472E4006DD846 /* SSProgressView.swift */; };
 		0723273721D47667006DD846 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723273621D47667006DD846 /* Colors.swift */; };
@@ -21,8 +22,6 @@
 		0736826321DA9CEB00F4B116 /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736826221DA9CEB00F4B116 /* ToastSwiftFramework.framework */; };
 		0736826721DAA29D00F4B116 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736826621DAA29D00F4B116 /* SnapKit.framework */; };
 		0736826921DAA2A500F4B116 /* MarqueeLabelSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736826821DAA2A500F4B116 /* MarqueeLabelSwift.framework */; };
-		0736827421DAB37400F4B116 /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736827321DAB37400F4B116 /* NotificationBanner.framework */; };
-		0736827621DAB4DC00F4B116 /* NotificationBanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0736827521DAB4DC00F4B116 /* NotificationBanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0736827821DAF81A00F4B116 /* WantedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736827721DAF81A00F4B116 /* WantedViewController.swift */; };
 		0736827A21DAF87900F4B116 /* MissingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736827921DAF87900F4B116 /* MissingViewController.swift */; };
 		074623EB21B5F5C9001EDACB /* SeriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */; };
@@ -90,7 +89,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0736827621DAB4DC00F4B116 /* NotificationBanner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +98,7 @@
 /* Begin PBXFileReference section */
 		0720FDBA21C34E35008CAD8A /* SeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesViewController.swift; sourceTree = "<group>"; };
 		0720FDBD21D04350008CAD8A /* SeriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesTableViewCell.swift; sourceTree = "<group>"; };
+		0721C4E121E99AF500BDB2B9 /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Carthage/Build/iOS/NotificationBanner.framework; sourceTree = "<group>"; };
 		0723273121D2CF26006DD846 /* SystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemViewController.swift; sourceTree = "<group>"; };
 		0723273421D472E4006DD846 /* SSProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSProgressView.swift; sourceTree = "<group>"; };
 		0723273621D47667006DD846 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -112,8 +111,6 @@
 		0736826221DA9CEB00F4B116 /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToastSwiftFramework.framework; path = Carthage/Build/iOS/ToastSwiftFramework.framework; sourceTree = "<group>"; };
 		0736826621DAA29D00F4B116 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		0736826821DAA2A500F4B116 /* MarqueeLabelSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabelSwift.framework; path = Carthage/Build/iOS/MarqueeLabelSwift.framework; sourceTree = "<group>"; };
-		0736827321DAB37400F4B116 /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Frameworks/NotificationBanner.framework; sourceTree = "<group>"; };
-		0736827521DAB4DC00F4B116 /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Frameworks/NotificationBanner.framework; sourceTree = "<group>"; };
 		0736827721DAF81A00F4B116 /* WantedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedViewController.swift; sourceTree = "<group>"; };
 		0736827921DAF87900F4B116 /* MissingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissingViewController.swift; sourceTree = "<group>"; };
 		074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -176,7 +173,7 @@
 				0736826321DA9CEB00F4B116 /* ToastSwiftFramework.framework in Frameworks */,
 				0736826721DAA29D00F4B116 /* SnapKit.framework in Frameworks */,
 				0736826921DAA2A500F4B116 /* MarqueeLabelSwift.framework in Frameworks */,
-				0736827421DAB37400F4B116 /* NotificationBanner.framework in Frameworks */,
+				0721C4E221E99AF500BDB2B9 /* NotificationBanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +271,7 @@
 		07D86B0321BB10AE000876C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0736827321DAB37400F4B116 /* NotificationBanner.framework */,
+				0721C4E121E99AF500BDB2B9 /* NotificationBanner.framework */,
 				0736826821DAA2A500F4B116 /* MarqueeLabelSwift.framework */,
 				0736826621DAA29D00F4B116 /* SnapKit.framework */,
 				0736826221DA9CEB00F4B116 /* ToastSwiftFramework.framework */,
@@ -290,7 +287,6 @@
 		07E461D521A7C0B500EB87F5 = {
 			isa = PBXGroup;
 			children = (
-				0736827521DAB4DC00F4B116 /* NotificationBanner.framework */,
 				07E461E021A7C0B500EB87F5 /* Dopplerr */,
 				07E461F721A7C0B600EB87F5 /* DopplerrTests */,
 				07E4620221A7C0B600EB87F5 /* DopplerrUITests */,
@@ -513,6 +509,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ToastSwiftFramework.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabelSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NotificationBanner.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -525,6 +522,7 @@
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ToastSwiftFramework.framework",
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MarqueeLabelSwift.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/NotificationBanner.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
