@@ -13,46 +13,58 @@ class SeriesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var airDateLabel: UILabel!
+    @IBOutlet weak var progressView: SSProgressView!
     
-   // private var widthConstraint: NSLayoutConstraint?
+    var imageShadow: CAShapeLayer!
     
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        let height = image.frame.height + title.frame.height
-//        frame.size.height = height
-//    }
-    
-   // override func awakeFromNib() {
-     //   super.awakeFromNib()
-        //custom logic goes here
-        
-//        let collectionWidth: CGFloat = collectionView.frame.width
-//        let itemSpacing: CGFloat = 16
-//        let itemsInOneLine = 3
-//
-//        let layout =  UICollectionViewFlowLayout()
-//        let width = collectionWidth - itemSpacing * CGFloat(itemsInOneLine - 1)
-//        //layout.itemSize = CGSize(width:floor(width/CGFloat(itemsInOneLine)),height:width/CGFloat(itemsInOneLine))
-//        layout.itemSize.width = floor(width/CGFloat(itemsInOneLine))
+    override func awakeFromNib() {
+        super.awakeFromNib()
 
-        //widthConstraint = contentView.widthAnchor.constraint(equalTo: superview!.widthAnchor, multiplier: 0.3)
-        //updateConstraints()
-  //  }
+        image.layer.cornerRadius = 4
+        image.layer.masksToBounds = true
+    }
     
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        // Create width constraint to set it later.
-//        widthConstraint = contentView.widthAnchor.constraint(equalToConstant: 0)
-//    }
-//    
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-    
-//    override func updateConstraints() {
-//        // Set width constraint to superview's width.
-//        widthConstraint?.constant = superview?.bounds.width ?? 0
-//        widthConstraint?.isActive = true
-//        super.updateConstraints()
-//    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        if imageShadow == nil {
+            imageShadow = CAShapeLayer()
+            
+            imageShadow.path = UIBezierPath(roundedRect: image.bounds, cornerRadius: 4).cgPath
+            imageShadow.fillColor = UIColor.black.cgColor
+            
+            //imageShadow.shadowColor = UIColor.black.cgColor
+            imageShadow.shadowPath = imageShadow.path
+            //imageShadow.shadowOffset = CGSize(width: 0, height: 7)
+            //imageShadow.shadowOpacity = 0.25
+            //imageShadow.shadowRadius = 8
+            
+            imageShadow.applySketchShadow(color: UIColor.black, alpha: 0.25, x: 0, y: image.layer.bounds.height*0.0324, blur: 8, spread: -4)
+            
+            layer.insertSublayer(imageShadow, below: image.layer)
+        }
+    }
+}
+
+extension CALayer {
+    func applySketchShadow(
+        color: UIColor = .black,
+        alpha: Float = 0.5,
+        x: CGFloat = 0,
+        y: CGFloat = 2,
+        blur: CGFloat = 4,
+        spread: CGFloat = 0)
+    {
+        shadowColor = color.cgColor
+        shadowOpacity = alpha
+        shadowOffset = CGSize(width: x, height: y)
+        shadowRadius = blur / 2.0
+        if spread == 0 {
+            shadowPath = nil
+        } else {
+            let dx = -spread
+            let rect = bounds.insetBy(dx: dx, dy: dx)
+            shadowPath = UIBezierPath(rect: rect).cgPath
+        }
+    }
 }

@@ -9,12 +9,15 @@
 import UIKit
 import SwiftSonarr
 import Kingfisher
+import SwiftR
+import ToastSwiftFramework
+import NotificationBanner
 
 class AllSeriesViewController: UIViewController {
     
     var allSeries = [Series]()
     var episodes: [Episode]?
-    var queue: [QueueItem]?
+    //var queue: [QueueItem]?
     let dispatchGroup = DispatchGroup()
     let filter = SeriesFilter.all
     var displaySeries = [Series]()
@@ -37,65 +40,54 @@ class AllSeriesViewController: UIViewController {
     @IBOutlet weak var continuingButton: ToggleButton!
     @IBOutlet weak var endedButton: ToggleButton!
     @IBOutlet weak var missingButton: ToggleButton!
+    @IBOutlet weak var filterButton: UIButton!
     
-    @IBAction func allButtonTapped(_ sender: ToggleButton) {
-        sender.isSelected = !sender.isSelected
-        filterSeries(filter: .all)
-        monitoredButton.isSelected = false
-        continuingButton.isSelected = false
-        endedButton.isSelected = false
-        missingButton.isSelected = false
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
-    }
-    
-    @IBAction func monitoredButtonTapped(_ sender: ToggleButton) {
-        sender.isSelected = !sender.isSelected
-        filterSeries(filter: .monitored)
-        allButton.isSelected = false
-        continuingButton.isSelected = false
-        endedButton.isSelected = false
-        missingButton.isSelected = false
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
-    }
-    
-    @IBAction func continuingButtonTapped(_ sender: ToggleButton) {
-        sender.isSelected = !sender.isSelected
-        filterSeries(filter: .continuing)
-        monitoredButton.isSelected = false
-        allButton.isSelected = false
-        endedButton.isSelected = false
-        missingButton.isSelected = false
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
-    }
-    
-    @IBAction func endedButtonTapped(_ sender: ToggleButton) {
-        sender.isSelected = !sender.isSelected
-        filterSeries(filter: .ended)
-        monitoredButton.isSelected = false
-        continuingButton.isSelected = false
-        allButton.isSelected = false
-        missingButton.isSelected = false
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
-    }
-    
-    @IBAction func missingButtonTapped(_ sender: ToggleButton) {
-        sender.isSelected = !sender.isSelected
-        filterSeries(filter: .missing)
-        monitoredButton.isSelected = false
-        continuingButton.isSelected = false
-        endedButton.isSelected = false
-        allButton.isSelected = false
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
+    @IBAction func filterButtonTapped(_ sender: UIButton) {
+        let filterAlert = UIAlertController(title: "Filter Series", message: nil, preferredStyle: .actionSheet)
+        filterAlert.addAction(UIAlertAction(title: "All", style: .default, handler: { action in
+            print("action1 tapped")
+            self.filterSeries(filter: .all)
+            self.filterButton.setTitle("All", for: .normal)
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }))
+        filterAlert.addAction(UIAlertAction(title: "Monitored", style: .default, handler: { action in
+            print("action2 tapped")
+            self.filterSeries(filter: .monitored)
+            self.filterButton.setTitle("Monitored", for: .normal)
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }))
+        filterAlert.addAction(UIAlertAction(title: "Continuing", style: .default, handler: { action in
+            print("action3 tapped")
+            self.filterSeries(filter: .continuing)
+            self.filterButton.setTitle("Continuing", for: .normal)
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }))
+        filterAlert.addAction(UIAlertAction(title: "Ended", style: .default, handler: { action in
+            print("action4 tapped")
+            self.filterSeries(filter: .ended)
+            self.filterButton.setTitle("Ended", for: .normal)
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }))
+        filterAlert.addAction(UIAlertAction(title: "Missing", style: .default, handler: { action in
+            print("action5 tapped")
+            self.filterSeries(filter: .missing)
+            self.filterButton.setTitle("Missing", for: .normal)
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }))
+        filterAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
+            print("cancel tapped")
+        }))
+        present(filterAlert, animated: true)
     }
     
     override func viewDidLoad() {
@@ -109,6 +101,26 @@ class AllSeriesViewController: UIViewController {
             print("dispatched")
             self.displaySeries = self.allSeries
             self.collectionView.reloadData()
+            
+//            // toggle queueing behavior
+//            ToastManager.shared.isQueueEnabled = true
+//            self.view.makeToast("This is a piece of toast")
+//
+//            // create a new style
+//            var style = ToastStyle()
+//            // this is just one of many style options
+//            style.messageColor = .blue
+//            self.view.makeToast("This is a piece of toast2", duration: 3.0, position: .bottom, style: style)
+            
+//            let q = NotificationBannerQueue()
+//            
+//            self.banner1 = StatusBarNotificationBanner(title: "banner 1", style: .success)
+//            self.banner2 = StatusBarNotificationBanner(title: "banner 2", style: .success)
+//            
+//            self.banner1!.show(queue: q)
+//            self.banner2!.show(queue: q)
+            
+            
         }
         
         let nibName = UINib(nibName: "SeriesCollectionViewCell", bundle:nil)
@@ -152,60 +164,60 @@ class AllSeriesViewController: UIViewController {
         case .ended:
             displaySeries = allSeries.filter { $0.status == "ended" }
         case .missing:
-            displaySeries = allSeries.filter { $0.episodeFileCount! < $0.episodeCount! }
+            displaySeries = allSeries.filter { $0.statistics!.episodeFileCount! < $0.statistics!.episodeCount! }
         default:
             displaySeries = allSeries
         }
     }
     
-    func loadEpisodes() {
-        dispatchGroup.enter()
-        Sonarr.wantedMissing(options: nil) { (result) in
-            switch result {
-            case .success(let wantedMissing):
-                self.episodes = wantedMissing.records
-            case.failure(let error):
-                print(error)
-            }
-            self.dispatchGroup.leave()
-        }
-    }
+//    func loadEpisodes() {
+//        dispatchGroup.enter()
+//        Sonarr.wantedMissing(options: nil) { (result) in
+//            switch result {
+//            case .success(let wantedMissing):
+//                self.episodes = wantedMissing.records
+//            case.failure(let error):
+//                print(error)
+//            }
+//            self.dispatchGroup.leave()
+//        }
+//    }
     
-    func loadQueue() {
-        dispatchGroup.enter()
-        Sonarr.queue { (result) in
-            switch result {
-            case .success(let queue):
-                self.queue = queue
-            case .failure(let error as NSError):
-                print(error)
-            }
-            self.dispatchGroup.leave()
-        }
-    }
+//    func loadQueue() {
+//        dispatchGroup.enter()
+//        Sonarr.queue { (result) in
+//            switch result {
+//            case .success(let queue):
+//                self.queue = queue
+//            case .failure(let error as NSError):
+//                print(error)
+//            }
+//            self.dispatchGroup.leave()
+//        }
+//    }
     
     
-    func status(episode: Episode) -> String {
-        if let episodeInQueue = queue?.first(where: { $0.id == episode.id }) {
-            let progress = 100 - (episodeInQueue.sizeleft! / episodeInQueue.size! * 100)
-            if progress == 0 {
-                // episode is downloading
-                return "ep is downloading"
-            } else {
-                // episode is downloading - xx%
-                return "ep is downloading - \(progress)%"
-            }
-        } else if let airDateUtc = episode.airDateUtc {
-            if airDateUtc <= Date() {
-                // episode is missing from disk
-                return "ep is missing from disk"
-            }
-        } else {
-            // TBA
-            return "TBA"
-        }
-        return ""
-    }
+//    func status(episode: Episode) -> String {
+//        if let episodeInQueue = queue?.first(where: { $0.id == episode.id }) {
+//            let progress = 100 - (episodeInQueue.sizeleft! / episodeInQueue.size! * 100)
+//            if progress == 0 {
+//                // episode is downloading
+//                return "ep is downloading"
+//            } else {
+//                // episode is downloading - xx%
+//                return "ep is downloading - \(progress)%"
+//            }
+//        } else if let airDateUtc = episode.airDateUtc {
+//            if airDateUtc <= Date() {
+//                // episode is missing from disk
+//                return "ep is missing from disk"
+//            }
+//        } else {
+//            // TBA
+//            return "TBA"
+//        }
+//        return ""
+//    }
 }
 
 extension AllSeriesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -234,13 +246,19 @@ extension AllSeriesViewController: UICollectionViewDelegate, UICollectionViewDat
             cell.airDateLabel.text = " "
         }
         
+        cell.progressView.progress = Float(series.statistics!.episodeFileCount!) / Float(series.statistics!.episodeCount!)
+        if series.status == "ended" {
+            cell.progressView.progressTintColor = UIColor.green
+        } else if (series.statistics!.episodeFileCount! < series.statistics!.episodeCount!) && series.monitored! {
+            cell.progressView.progressTintColor = UIColor.red
+        } else if (series.statistics!.episodeFileCount! < series.statistics!.episodeCount!) && !series.monitored! {
+            cell.progressView.progressTintColor = UIColor.yellow
+        } else {
+            cell.progressView.progressTintColor = UIColor.Theme.primary
+        }
+        
         return cell
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "test", for: indexPath)
-//        return headerView
-//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //let cell = Bundle.main.loadNibNamed(String(describing: SeriesCollectionViewCell.self), owner: nil, options: nil)![0] as! SeriesCollectionViewCell

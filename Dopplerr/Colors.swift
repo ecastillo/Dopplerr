@@ -20,6 +20,10 @@ extension UIColor {
         static var lightBlue: UIColor { return UIColor(red: 48/255, green: 186/255, blue: 241/255, alpha: 1) }
         
         static var primary: UIColor { return UIColor(named: "Primary")! }
+        
+        static var success: UIColor { return UIColor(named: "Success")! }
+        static var warning: UIColor { return UIColor(named: "Warning")! }
+        static var error: UIColor { return UIColor(named: "Error")! }
     }
 }
 

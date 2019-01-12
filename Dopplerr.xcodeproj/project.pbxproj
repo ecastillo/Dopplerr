@@ -14,10 +14,44 @@
 		0723273721D47667006DD846 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0723273621D47667006DD846 /* Colors.swift */; };
 		0736825421D5E76700F4B116 /* Tabman.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736825121D5E76700F4B116 /* Tabman.framework */; };
 		0736825521D5E76700F4B116 /* Pageboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736825321D5E76700F4B116 /* Pageboy.framework */; };
+		0736825721D5EE1500F4B116 /* AutoInsetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736825621D5EE1400F4B116 /* AutoInsetter.framework */; };
+		0736825921D5F0AD00F4B116 /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736825821D5F0AD00F4B116 /* QueueViewController.swift */; };
+		0736825B21D9D47800F4B116 /* SwiftR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736825A21D9D47800F4B116 /* SwiftR.framework */; };
+		0736826121DA994300F4B116 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736826021DA994200F4B116 /* NotificationManager.swift */; };
+		0736826321DA9CEB00F4B116 /* ToastSwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736826221DA9CEB00F4B116 /* ToastSwiftFramework.framework */; };
+		0736826721DAA29D00F4B116 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736826621DAA29D00F4B116 /* SnapKit.framework */; };
+		0736826921DAA2A500F4B116 /* MarqueeLabelSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736826821DAA2A500F4B116 /* MarqueeLabelSwift.framework */; };
+		0736827421DAB37400F4B116 /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736827321DAB37400F4B116 /* NotificationBanner.framework */; };
+		0736827621DAB4DC00F4B116 /* NotificationBanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0736827521DAB4DC00F4B116 /* NotificationBanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0736827821DAF81A00F4B116 /* WantedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736827721DAF81A00F4B116 /* WantedViewController.swift */; };
+		0736827A21DAF87900F4B116 /* MissingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736827921DAF87900F4B116 /* MissingViewController.swift */; };
 		074623EB21B5F5C9001EDACB /* SeriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */; };
 		074623EE21B61C1A001EDACB /* SeriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074623ED21B61C1A001EDACB /* SeriesCollectionViewCell.xib */; };
 		074623F221B62A58001EDACB /* ToggleButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074623F121B62A58001EDACB /* ToggleButton.xib */; };
 		074623F421B62AE1001EDACB /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074623F321B62AE1001EDACB /* ToggleButton.swift */; };
+		0760493421E15BAF007631AF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760493321E15BAF007631AF /* HistoryViewController.swift */; };
+		0760493E21E1665F007631AF /* SonarrTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760493C21E1665F007631AF /* SonarrTableViewCell.swift */; };
+		0760493F21E1665F007631AF /* SonarrTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0760493D21E1665F007631AF /* SonarrTableViewCell.xib */; };
+		0760495221E167C1007631AF /* TTNorms-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494021E167BA007631AF /* TTNorms-BlackItalic.otf */; };
+		0760495321E167C1007631AF /* TTNorms-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494121E167BB007631AF /* TTNorms-ExtraLightItalic.otf */; };
+		0760495421E167C1007631AF /* TTNorms-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494221E167BB007631AF /* TTNorms-ThinItalic.otf */; };
+		0760495521E167C1007631AF /* TTNorms-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494321E167BB007631AF /* TTNorms-Light.otf */; };
+		0760495621E167C1007631AF /* TTNorms-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494421E167BC007631AF /* TTNorms-Medium.otf */; };
+		0760495721E167C1007631AF /* TTNorms-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494521E167BC007631AF /* TTNorms-HeavyItalic.otf */; };
+		0760495821E167C1007631AF /* TTNorms-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494621E167BC007631AF /* TTNorms-BoldItalic.otf */; };
+		0760495921E167C1007631AF /* TTNorms-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494721E167BD007631AF /* TTNorms-ExtraLight.otf */; };
+		0760495A21E167C1007631AF /* TTNorms-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494821E167BD007631AF /* TTNorms-ExtraBold.otf */; };
+		0760495B21E167C1007631AF /* TTNorms-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494921E167BE007631AF /* TTNorms-Bold.otf */; };
+		0760495C21E167C1007631AF /* TTNorms-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494A21E167BE007631AF /* TTNorms-Heavy.otf */; };
+		0760495D21E167C1007631AF /* TTNorms-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494B21E167BE007631AF /* TTNorms-Italic.otf */; };
+		0760495E21E167C1007631AF /* TTNorms-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494C21E167BF007631AF /* TTNorms-MediumItalic.otf */; };
+		0760495F21E167C1007631AF /* TTNorms-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494D21E167BF007631AF /* TTNorms-Regular.otf */; };
+		0760496021E167C1007631AF /* TTNorms-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494E21E167BF007631AF /* TTNorms-ExtraBoldItalic.otf */; };
+		0760496121E167C1007631AF /* TTNorms-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760494F21E167C0007631AF /* TTNorms-Thin.otf */; };
+		0760496221E167C1007631AF /* TTNorms-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760495021E167C0007631AF /* TTNorms-Black.otf */; };
+		0760496321E167C1007631AF /* TTNorms-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0760495121E167C1007631AF /* TTNorms-LightItalic.otf */; };
+		0760496E21E2A4AC007631AF /* SSTableViewCellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0760496D21E2A4AC007631AF /* SSTableViewCellDetailView.swift */; };
+		0760497021E2A4B8007631AF /* SSTableViewCellDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0760496F21E2A4B8007631AF /* SSTableViewCellDetailView.xib */; };
 		07C0DF3321D598C9004C9C4F /* DiskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0DF3221D598C9004C9C4F /* DiskTableViewCell.swift */; };
 		07D86B0621BB10AE000876C2 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D86B0521BB10AE000876C2 /* Kingfisher.framework */; };
 		07D86B0D21BC761B000876C2 /* Date+Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D86B0C21BC761B000876C2 /* Date+Offset.swift */; };
@@ -80,6 +114,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				07E4621B21A7C0F000EB87F5 /* SwiftSonarr.framework in Embed Frameworks */,
+				0736827621DAB4DC00F4B116 /* NotificationBanner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,10 +129,44 @@
 		0723273621D47667006DD846 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0736825121D5E76700F4B116 /* Tabman.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tabman.framework; path = Carthage/Build/iOS/Tabman.framework; sourceTree = "<group>"; };
 		0736825321D5E76700F4B116 /* Pageboy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pageboy.framework; path = Carthage/Build/iOS/Pageboy.framework; sourceTree = "<group>"; };
+		0736825621D5EE1400F4B116 /* AutoInsetter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AutoInsetter.framework; path = Carthage/Build/iOS/AutoInsetter.framework; sourceTree = "<group>"; };
+		0736825821D5F0AD00F4B116 /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
+		0736825A21D9D47800F4B116 /* SwiftR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftR.framework; path = Carthage/Build/iOS/SwiftR.framework; sourceTree = "<group>"; };
+		0736826021DA994200F4B116 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		0736826221DA9CEB00F4B116 /* ToastSwiftFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToastSwiftFramework.framework; path = Carthage/Build/iOS/ToastSwiftFramework.framework; sourceTree = "<group>"; };
+		0736826621DAA29D00F4B116 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		0736826821DAA2A500F4B116 /* MarqueeLabelSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabelSwift.framework; path = Carthage/Build/iOS/MarqueeLabelSwift.framework; sourceTree = "<group>"; };
+		0736827321DAB37400F4B116 /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Frameworks/NotificationBanner.framework; sourceTree = "<group>"; };
+		0736827521DAB4DC00F4B116 /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Frameworks/NotificationBanner.framework; sourceTree = "<group>"; };
+		0736827721DAF81A00F4B116 /* WantedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedViewController.swift; sourceTree = "<group>"; };
+		0736827921DAF87900F4B116 /* MissingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissingViewController.swift; sourceTree = "<group>"; };
 		074623EA21B5F5C9001EDACB /* SeriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		074623ED21B61C1A001EDACB /* SeriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		074623F121B62A58001EDACB /* ToggleButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToggleButton.xib; sourceTree = "<group>"; };
 		074623F321B62AE1001EDACB /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		0760493321E15BAF007631AF /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0760493C21E1665F007631AF /* SonarrTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonarrTableViewCell.swift; sourceTree = "<group>"; };
+		0760493D21E1665F007631AF /* SonarrTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SonarrTableViewCell.xib; sourceTree = "<group>"; };
+		0760494021E167BA007631AF /* TTNorms-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-BlackItalic.otf"; sourceTree = "<group>"; };
+		0760494121E167BB007631AF /* TTNorms-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		0760494221E167BB007631AF /* TTNorms-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-ThinItalic.otf"; sourceTree = "<group>"; };
+		0760494321E167BB007631AF /* TTNorms-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Light.otf"; sourceTree = "<group>"; };
+		0760494421E167BC007631AF /* TTNorms-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Medium.otf"; sourceTree = "<group>"; };
+		0760494521E167BC007631AF /* TTNorms-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-HeavyItalic.otf"; sourceTree = "<group>"; };
+		0760494621E167BC007631AF /* TTNorms-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-BoldItalic.otf"; sourceTree = "<group>"; };
+		0760494721E167BD007631AF /* TTNorms-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-ExtraLight.otf"; sourceTree = "<group>"; };
+		0760494821E167BD007631AF /* TTNorms-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-ExtraBold.otf"; sourceTree = "<group>"; };
+		0760494921E167BE007631AF /* TTNorms-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Bold.otf"; sourceTree = "<group>"; };
+		0760494A21E167BE007631AF /* TTNorms-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Heavy.otf"; sourceTree = "<group>"; };
+		0760494B21E167BE007631AF /* TTNorms-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Italic.otf"; sourceTree = "<group>"; };
+		0760494C21E167BF007631AF /* TTNorms-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-MediumItalic.otf"; sourceTree = "<group>"; };
+		0760494D21E167BF007631AF /* TTNorms-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Regular.otf"; sourceTree = "<group>"; };
+		0760494E21E167BF007631AF /* TTNorms-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		0760494F21E167C0007631AF /* TTNorms-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Thin.otf"; sourceTree = "<group>"; };
+		0760495021E167C0007631AF /* TTNorms-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-Black.otf"; sourceTree = "<group>"; };
+		0760495121E167C1007631AF /* TTNorms-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TTNorms-LightItalic.otf"; sourceTree = "<group>"; };
+		0760496D21E2A4AC007631AF /* SSTableViewCellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSTableViewCellDetailView.swift; sourceTree = "<group>"; };
+		0760496F21E2A4B8007631AF /* SSTableViewCellDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSTableViewCellDetailView.xib; sourceTree = "<group>"; };
 		07C0DF3221D598C9004C9C4F /* DiskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskTableViewCell.swift; sourceTree = "<group>"; };
 		07D86B0521BB10AE000876C2 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		07D86B0C21BC761B000876C2 /* Date+Offset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Offset.swift"; sourceTree = "<group>"; };
@@ -124,10 +193,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0736825721D5EE1500F4B116 /* AutoInsetter.framework in Frameworks */,
 				07E4621A21A7C0F000EB87F5 /* SwiftSonarr.framework in Frameworks */,
 				07D86B0621BB10AE000876C2 /* Kingfisher.framework in Frameworks */,
 				0736825421D5E76700F4B116 /* Tabman.framework in Frameworks */,
 				0736825521D5E76700F4B116 /* Pageboy.framework in Frameworks */,
+				0736825B21D9D47800F4B116 /* SwiftR.framework in Frameworks */,
+				0736826321DA9CEB00F4B116 /* ToastSwiftFramework.framework in Frameworks */,
+				0736826721DAA29D00F4B116 /* SnapKit.framework in Frameworks */,
+				0736826921DAA2A500F4B116 /* MarqueeLabelSwift.framework in Frameworks */,
+				0736827421DAB37400F4B116 /* NotificationBanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +223,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0760496421E167C8007631AF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0760495021E167C0007631AF /* TTNorms-Black.otf */,
+				0760494021E167BA007631AF /* TTNorms-BlackItalic.otf */,
+				0760494921E167BE007631AF /* TTNorms-Bold.otf */,
+				0760494621E167BC007631AF /* TTNorms-BoldItalic.otf */,
+				0760494821E167BD007631AF /* TTNorms-ExtraBold.otf */,
+				0760494E21E167BF007631AF /* TTNorms-ExtraBoldItalic.otf */,
+				0760494721E167BD007631AF /* TTNorms-ExtraLight.otf */,
+				0760494121E167BB007631AF /* TTNorms-ExtraLightItalic.otf */,
+				0760494A21E167BE007631AF /* TTNorms-Heavy.otf */,
+				0760494521E167BC007631AF /* TTNorms-HeavyItalic.otf */,
+				0760494B21E167BE007631AF /* TTNorms-Italic.otf */,
+				0760494321E167BB007631AF /* TTNorms-Light.otf */,
+				0760495121E167C1007631AF /* TTNorms-LightItalic.otf */,
+				0760494421E167BC007631AF /* TTNorms-Medium.otf */,
+				0760494C21E167BF007631AF /* TTNorms-MediumItalic.otf */,
+				0760494D21E167BF007631AF /* TTNorms-Regular.otf */,
+				0760494F21E167C0007631AF /* TTNorms-Thin.otf */,
+				0760494221E167BB007631AF /* TTNorms-ThinItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		07C0DF3721D5B9FB004C9C4F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0760493C21E1665F007631AF /* SonarrTableViewCell.swift */,
+				0760493D21E1665F007631AF /* SonarrTableViewCell.xib */,
+				0760496D21E2A4AC007631AF /* SSTableViewCellDetailView.swift */,
+				0760496F21E2A4B8007631AF /* SSTableViewCellDetailView.xib */,
 				0720FDBD21D04350008CAD8A /* SeriesTableViewCell.swift */,
 				07D86B0E21BCC966000876C2 /* ActivityTableViewCell.swift */,
 				07C0DF3221D598C9004C9C4F /* DiskTableViewCell.swift */,
@@ -176,6 +280,10 @@
 				07E461E321A7C0B500EB87F5 /* AllSeriesViewController.swift */,
 				0720FDBA21C34E35008CAD8A /* SeriesViewController.swift */,
 				07E461E521A7C0B500EB87F5 /* ActivityViewController.swift */,
+				0736825821D5F0AD00F4B116 /* QueueViewController.swift */,
+				0760493321E15BAF007631AF /* HistoryViewController.swift */,
+				0736827721DAF81A00F4B116 /* WantedViewController.swift */,
+				0736827921DAF87900F4B116 /* MissingViewController.swift */,
 				0723273121D2CF26006DD846 /* SystemViewController.swift */,
 			);
 			path = Controllers;
@@ -192,6 +300,12 @@
 		07D86B0321BB10AE000876C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0736827321DAB37400F4B116 /* NotificationBanner.framework */,
+				0736826821DAA2A500F4B116 /* MarqueeLabelSwift.framework */,
+				0736826621DAA29D00F4B116 /* SnapKit.framework */,
+				0736826221DA9CEB00F4B116 /* ToastSwiftFramework.framework */,
+				0736825A21D9D47800F4B116 /* SwiftR.framework */,
+				0736825621D5EE1400F4B116 /* AutoInsetter.framework */,
 				0736825321D5E76700F4B116 /* Pageboy.framework */,
 				0736825121D5E76700F4B116 /* Tabman.framework */,
 				07D86B0521BB10AE000876C2 /* Kingfisher.framework */,
@@ -202,6 +316,7 @@
 		07E461D521A7C0B500EB87F5 = {
 			isa = PBXGroup;
 			children = (
+				0736827521DAB4DC00F4B116 /* NotificationBanner.framework */,
 				07E4621121A7C0D900EB87F5 /* SwiftSonarr.xcodeproj */,
 				07E461E021A7C0B500EB87F5 /* Dopplerr */,
 				07E461F721A7C0B600EB87F5 /* DopplerrTests */,
@@ -228,7 +343,9 @@
 				07C0DF3921D5BA14004C9C4F /* Controllers */,
 				07C0DF3721D5B9FB004C9C4F /* Views */,
 				07C0DF3A21D5BA8A004C9C4F /* Extensions */,
+				0760496421E167C8007631AF /* Fonts */,
 				0723273621D47667006DD846 /* Colors.swift */,
+				0736826021DA994200F4B116 /* NotificationManager.swift */,
 				07E461E121A7C0B500EB87F5 /* AppDelegate.swift */,
 				07E461E721A7C0B500EB87F5 /* Main.storyboard */,
 				07E461EA21A7C0B500EB87F5 /* Assets.xcassets */,
@@ -395,10 +512,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0760496321E167C1007631AF /* TTNorms-LightItalic.otf in Resources */,
 				07E461EE21A7C0B500EB87F5 /* LaunchScreen.storyboard in Resources */,
+				0760495921E167C1007631AF /* TTNorms-ExtraLight.otf in Resources */,
+				0760495721E167C1007631AF /* TTNorms-HeavyItalic.otf in Resources */,
+				0760495321E167C1007631AF /* TTNorms-ExtraLightItalic.otf in Resources */,
+				0760495F21E167C1007631AF /* TTNorms-Regular.otf in Resources */,
+				0760495821E167C1007631AF /* TTNorms-BoldItalic.otf in Resources */,
+				0760497021E2A4B8007631AF /* SSTableViewCellDetailView.xib in Resources */,
+				0760495D21E167C1007631AF /* TTNorms-Italic.otf in Resources */,
+				0760495221E167C1007631AF /* TTNorms-BlackItalic.otf in Resources */,
+				0760495E21E167C1007631AF /* TTNorms-MediumItalic.otf in Resources */,
+				0760495621E167C1007631AF /* TTNorms-Medium.otf in Resources */,
+				0760495421E167C1007631AF /* TTNorms-ThinItalic.otf in Resources */,
+				0760495521E167C1007631AF /* TTNorms-Light.otf in Resources */,
+				0760495A21E167C1007631AF /* TTNorms-ExtraBold.otf in Resources */,
 				07E461EB21A7C0B500EB87F5 /* Assets.xcassets in Resources */,
+				0760495C21E167C1007631AF /* TTNorms-Heavy.otf in Resources */,
+				0760493F21E1665F007631AF /* SonarrTableViewCell.xib in Resources */,
+				0760496021E167C1007631AF /* TTNorms-ExtraBoldItalic.otf in Resources */,
+				0760496221E167C1007631AF /* TTNorms-Black.otf in Resources */,
+				0760495B21E167C1007631AF /* TTNorms-Bold.otf in Resources */,
 				074623F221B62A58001EDACB /* ToggleButton.xib in Resources */,
 				074623EE21B61C1A001EDACB /* SeriesCollectionViewCell.xib in Resources */,
+				0760496121E167C1007631AF /* TTNorms-Thin.otf in Resources */,
 				07E461E921A7C0B500EB87F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,11 +566,25 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Pageboy.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Tabman.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AutoInsetter.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftR.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ToastSwiftFramework.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabelSwift.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Pageboy.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Tabman.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AutoInsetter.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftR.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ToastSwiftFramework.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MarqueeLabelSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,14 +600,21 @@
 				07E461E621A7C0B500EB87F5 /* ActivityViewController.swift in Sources */,
 				0723273721D47667006DD846 /* Colors.swift in Sources */,
 				0720FDBE21D04350008CAD8A /* SeriesTableViewCell.swift in Sources */,
+				0760493E21E1665F007631AF /* SonarrTableViewCell.swift in Sources */,
+				0736827A21DAF87900F4B116 /* MissingViewController.swift in Sources */,
 				074623F421B62AE1001EDACB /* ToggleButton.swift in Sources */,
 				07E461E221A7C0B500EB87F5 /* AppDelegate.swift in Sources */,
 				07E461E421A7C0B500EB87F5 /* AllSeriesViewController.swift in Sources */,
 				07C0DF3321D598C9004C9C4F /* DiskTableViewCell.swift in Sources */,
+				0760496E21E2A4AC007631AF /* SSTableViewCellDetailView.swift in Sources */,
+				0736827821DAF81A00F4B116 /* WantedViewController.swift in Sources */,
 				07D86B0F21BCC966000876C2 /* ActivityTableViewCell.swift in Sources */,
+				0736825921D5F0AD00F4B116 /* QueueViewController.swift in Sources */,
 				07D86B0D21BC761B000876C2 /* Date+Offset.swift in Sources */,
 				0723273221D2CF26006DD846 /* SystemViewController.swift in Sources */,
 				0723273521D472E4006DD846 /* SSProgressView.swift in Sources */,
+				0736826121DA994300F4B116 /* NotificationManager.swift in Sources */,
+				0760493421E15BAF007631AF /* HistoryViewController.swift in Sources */,
 				074623EB21B5F5C9001EDACB /* SeriesCollectionViewCell.swift in Sources */,
 				0720FDBB21C34E35008CAD8A /* SeriesViewController.swift in Sources */,
 			);
@@ -644,6 +802,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = Dopplerr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -667,6 +826,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = Dopplerr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

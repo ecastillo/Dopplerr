@@ -1,8 +1,8 @@
 //
-//  ActivityViewController.swift
+//  WantedViewController.swift
 //  Dopplerr
 //
-//  Created by Eric Castillo on 11/22/18.
+//  Created by Eric Castillo on 12/31/18.
 //  Copyright © 2018 Eric Castillo. All rights reserved.
 //
 
@@ -11,14 +11,14 @@ import SwiftSonarr
 import Tabman
 import Pageboy
 
-class ActivityViewController: TabmanViewController {
+class WantedViewController: TabmanViewController {
     
-    private var viewControllers = [UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "queue"),
-                                   UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "history")]
+    private var viewControllers = [UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "missing"),
+                                   UIViewController()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.dataSource = self
         
         // Create bar
@@ -31,8 +31,8 @@ class ActivityViewController: TabmanViewController {
     }
 }
 
-extension ActivityViewController: PageboyViewControllerDataSource, TMBarDataSource {
-
+extension WantedViewController: PageboyViewControllerDataSource, TMBarDataSource {
+    
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
         return viewControllers.count
     }
@@ -47,8 +47,8 @@ extension ActivityViewController: PageboyViewControllerDataSource, TMBarDataSour
     }
     
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
-        let barItems = [TMBarItem(title: "Queue"),
-                        TMBarItem(title: "History")]
+        let barItems = [TMBarItem(title: "Missing"),
+                        TMBarItem(title: "Cutoff Unmet")]
         return barItems[index]
     }
 }
